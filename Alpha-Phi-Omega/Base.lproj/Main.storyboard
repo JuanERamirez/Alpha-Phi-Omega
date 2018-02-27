@@ -18,20 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJU-nx-I2N">
-                                <rect key="frame" x="149" y="112" width="76" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdy-zO-b94">
+                                <rect key="frame" x="153.5" y="318" width="68" height="30"/>
+                                <state key="normal" title="Press Me!"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJU-nx-I2N">
+                                <rect key="frame" x="149" y="79" width="76" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdy-zO-b94">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uJU-nx-I2N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="3nf-H3-YSr"/>
+                            <constraint firstItem="uJU-nx-I2N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FsR-XI-1K7"/>
+                            <constraint firstItem="uJU-nx-I2N" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="akw-ZZ-Icq"/>
+                            <constraint firstItem="fdy-zO-b94" firstAttribute="centerX" secondItem="uJU-nx-I2N" secondAttribute="centerX" id="gwd-Um-rFC"/>
+                            <constraint firstItem="fdy-zO-b94" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sEq-p7-azd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
