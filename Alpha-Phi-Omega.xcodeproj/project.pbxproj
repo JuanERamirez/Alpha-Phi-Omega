@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C9E2F0820500EAB00F7427E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E2F0720500EAB00F7427E /* CreateAccountViewController.swift */; };
 		1C9E2F0A20500F2400F7427E /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E2F0920500F2400F7427E /* ResetPasswordViewController.swift */; };
+		1C9E2F0C205022A600F7427E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C9E2F0B205022A600F7427E /* GoogleService-Info.plist */; };
+		2F456A06A2817C9EBFB5A050 /* Pods_Alpha_Phi_Omega.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D497D1A76A049DC2CF3D03C /* Pods_Alpha_Phi_Omega.framework */; };
 		A36370B82044C1B7007C561D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36370B72044C1B7007C561D /* AppDelegate.swift */; };
 		A36370BA2044C1B7007C561D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36370B92044C1B7007C561D /* ViewController.swift */; };
 		A36370BD2044C1B7007C561D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36370BB2044C1B7007C561D /* Main.storyboard */; };
@@ -21,6 +23,9 @@
 /* Begin PBXFileReference section */
 		1C9E2F0720500EAB00F7427E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		1C9E2F0920500F2400F7427E /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		1C9E2F0B205022A600F7427E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5D497D1A76A049DC2CF3D03C /* Pods_Alpha_Phi_Omega.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alpha_Phi_Omega.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		935523DE70A078F0583A0634 /* Pods-Alpha-Phi-Omega.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alpha-Phi-Omega.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alpha-Phi-Omega/Pods-Alpha-Phi-Omega.release.xcconfig"; sourceTree = "<group>"; };
 		A36370B42044C1B7007C561D /* Alpha-Phi-Omega.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alpha-Phi-Omega.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36370B72044C1B7007C561D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A36370B92044C1B7007C561D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		A36370C42044C1B7007C561D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A36370C62044C1B7007C561D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A36370CC2044D193007C561D /* APO-Torch-Logo-whitegold-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APO-Torch-Logo-whitegold-1.png"; sourceTree = "<group>"; };
+		EF7DB5D66EDEF404E1291C10 /* Pods-Alpha-Phi-Omega.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alpha-Phi-Omega.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alpha-Phi-Omega/Pods-Alpha-Phi-Omega.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F456A06A2817C9EBFB5A050 /* Pods_Alpha_Phi_Omega.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		688F5F560EA4AE47EE384744 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DB5D66EDEF404E1291C10 /* Pods-Alpha-Phi-Omega.debug.xcconfig */,
+				935523DE70A078F0583A0634 /* Pods-Alpha-Phi-Omega.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A36370AB2044C1B7007C561D = {
 			isa = PBXGroup;
 			children = (
 				A36370B62044C1B7007C561D /* Alpha-Phi-Omega */,
 				A36370B52044C1B7007C561D /* Products */,
+				688F5F560EA4AE47EE384744 /* Pods */,
+				FB45F6009B1D7541EE9F2A2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +90,17 @@
 				A36370C62044C1B7007C561D /* Info.plist */,
 				A36370BE2044C1B7007C561D /* Alpha_Phi_Omega.xcdatamodeld */,
 				A36370CC2044D193007C561D /* APO-Torch-Logo-whitegold-1.png */,
+				1C9E2F0B205022A600F7427E /* GoogleService-Info.plist */,
 			);
 			path = "Alpha-Phi-Omega";
+			sourceTree = "<group>";
+		};
+		FB45F6009B1D7541EE9F2A2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D497D1A76A049DC2CF3D03C /* Pods_Alpha_Phi_Omega.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A36370C92044C1B7007C561D /* Build configuration list for PBXNativeTarget "Alpha-Phi-Omega" */;
 			buildPhases = (
+				95EC05EDCDF5B4D0C2206854 /* [CP] Check Pods Manifest.lock */,
 				A36370B02044C1B7007C561D /* Sources */,
 				A36370B12044C1B7007C561D /* Frameworks */,
 				A36370B22044C1B7007C561D /* Resources */,
+				82EA92562C466A28EF0BC1D3 /* [CP] Embed Pods Frameworks */,
+				5C4A2EB017B9FB142FA9E76F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,12 +167,73 @@
 			files = (
 				A36370C52044C1B7007C561D /* LaunchScreen.storyboard in Resources */,
 				A36370C22044C1B7007C561D /* Assets.xcassets in Resources */,
+				1C9E2F0C205022A600F7427E /* GoogleService-Info.plist in Resources */,
 				A36370CD2044D193007C561D /* APO-Torch-Logo-whitegold-1.png in Resources */,
 				A36370BD2044C1B7007C561D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C4A2EB017B9FB142FA9E76F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alpha-Phi-Omega/Pods-Alpha-Phi-Omega-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82EA92562C466A28EF0BC1D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Alpha-Phi-Omega/Pods-Alpha-Phi-Omega-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alpha-Phi-Omega/Pods-Alpha-Phi-Omega-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95EC05EDCDF5B4D0C2206854 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alpha-Phi-Omega-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A36370B02044C1B7007C561D /* Sources */ = {
@@ -288,6 +379,7 @@
 		};
 		A36370CA2044C1B7007C561D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF7DB5D66EDEF404E1291C10 /* Pods-Alpha-Phi-Omega.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +396,7 @@
 		};
 		A36370CB2044C1B7007C561D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 935523DE70A078F0583A0634 /* Pods-Alpha-Phi-Omega.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

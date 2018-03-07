@@ -64,7 +64,7 @@
                                 </state>
                                 <connections>
                                     <action selector="forgotPasswordPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sgd-6A-fbM"/>
-                                    <segue destination="ntr-IC-y9l" kind="showDetail" identifier="forgotPassword" id="UtY-Du-P03"/>
+                                    <segue destination="ntr-IC-y9l" kind="presentation" identifier="forgotPassword" id="UtY-Du-P03"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5a-SU-r7N">
@@ -75,7 +75,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5O-92-6G2"/>
-                                    <segue destination="0nJ-wP-0Um" kind="show" id="bfr-pI-4Fb"/>
+                                    <segue destination="0nJ-wP-0Um" kind="presentation" identifier="createAccount" id="bfr-pI-4Fb"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hje-WE-OGk">
