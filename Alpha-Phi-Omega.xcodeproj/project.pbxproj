@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C9E2F0820500EAB00F7427E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E2F0720500EAB00F7427E /* CreateAccountViewController.swift */; };
+		1C9E2F0A20500F2400F7427E /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E2F0920500F2400F7427E /* ResetPasswordViewController.swift */; };
 		A36370B82044C1B7007C561D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36370B72044C1B7007C561D /* AppDelegate.swift */; };
 		A36370BA2044C1B7007C561D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36370B92044C1B7007C561D /* ViewController.swift */; };
 		A36370BD2044C1B7007C561D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36370BB2044C1B7007C561D /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C9E2F0720500EAB00F7427E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		1C9E2F0920500F2400F7427E /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		A36370B42044C1B7007C561D /* Alpha-Phi-Omega.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alpha-Phi-Omega.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36370B72044C1B7007C561D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A36370B92044C1B7007C561D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				A36370B72044C1B7007C561D /* AppDelegate.swift */,
 				A36370B92044C1B7007C561D /* ViewController.swift */,
 				A36370BB2044C1B7007C561D /* Main.storyboard */,
+				1C9E2F0920500F2400F7427E /* ResetPasswordViewController.swift */,
+				1C9E2F0720500EAB00F7427E /* CreateAccountViewController.swift */,
 				A36370C12044C1B7007C561D /* Assets.xcassets */,
 				A36370C32044C1B7007C561D /* LaunchScreen.storyboard */,
 				A36370C62044C1B7007C561D /* Info.plist */,
@@ -143,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9E2F0820500EAB00F7427E /* CreateAccountViewController.swift in Sources */,
 				A36370BA2044C1B7007C561D /* ViewController.swift in Sources */,
+				1C9E2F0A20500F2400F7427E /* ResetPasswordViewController.swift in Sources */,
 				A36370C02044C1B7007C561D /* Alpha_Phi_Omega.xcdatamodeld in Sources */,
 				A36370B82044C1B7007C561D /* AppDelegate.swift in Sources */,
 			);
@@ -283,11 +291,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G259YGWME2;
+				DEVELOPMENT_TEAM = 32C7P2K638;
 				INFOPLIST_FILE = "Alpha-Phi-Omega/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.calpoly.jramir94.Alpha-Phi-Omega";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JuanRamirez.Alpha-Phi-Omega";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -299,11 +307,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G259YGWME2;
+				DEVELOPMENT_TEAM = 32C7P2K638;
 				INFOPLIST_FILE = "Alpha-Phi-Omega/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.calpoly.jramir94.Alpha-Phi-Omega";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JuanRamirez.Alpha-Phi-Omega";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
