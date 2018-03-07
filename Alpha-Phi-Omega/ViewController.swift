@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
@@ -43,17 +45,47 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    @IBAction func loginPressed(_ sender: UIButton) {
+    @IBAction func loginAction(_ sender: UIButton) {
+        if self.emailTextField.text == "" || self.passwordTextField.text == "" {
+            // Alert to tell the user that there was an error because they didn't fill anything in the textfields
+            
+            let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
+        else {
+            Auth.auth().signIn(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
+                
+                if error == nil {
+                    // Print into the console if successfully logged in
+                    print("You have successfully logged in")
+                    
+                    // Go to the HomeViewController if the login is successful
+                    let vc = self.storyboard?.instantiateInitialViewController()
+                    self.present(vc!, animated: true, completion: nil)
+                }
+                else {
+                    // Tells the user that there is an error and then gets Firebase to tell them the error
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+                
+            }
+        }
+    }
+    
+    @IBAction func forgotPasswordAction(_ sender: UIButton) {
         
     }
     
-    
-    @IBAction func forgotPasswordPressed(_ sender: UIButton) {
-        
-    }
-    
-    
-    @IBAction func createAccountPressed(_ sender: UIButton) {
+    @IBAction func createAccountAction(_ sender: UIButton) {
         
     }
     

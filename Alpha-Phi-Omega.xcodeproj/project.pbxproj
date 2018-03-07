@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C5D2A6D2050996500D3922E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5D2A6C2050996500D3922E /* DashboardViewController.swift */; };
 		1C9E2F0820500EAB00F7427E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E2F0720500EAB00F7427E /* CreateAccountViewController.swift */; };
 		1C9E2F0A20500F2400F7427E /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E2F0920500F2400F7427E /* ResetPasswordViewController.swift */; };
 		1C9E2F0C205022A600F7427E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C9E2F0B205022A600F7427E /* GoogleService-Info.plist */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C5D2A6C2050996500D3922E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		1C9E2F0720500EAB00F7427E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		1C9E2F0920500F2400F7427E /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		1C9E2F0B205022A600F7427E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				A36370B72044C1B7007C561D /* AppDelegate.swift */,
 				A36370B92044C1B7007C561D /* ViewController.swift */,
 				A36370BB2044C1B7007C561D /* Main.storyboard */,
+				1C5D2A6C2050996500D3922E /* DashboardViewController.swift */,
 				1C9E2F0920500F2400F7427E /* ResetPasswordViewController.swift */,
 				1C9E2F0720500EAB00F7427E /* CreateAccountViewController.swift */,
 				A36370C12044C1B7007C561D /* Assets.xcassets */,
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C9E2F0820500EAB00F7427E /* CreateAccountViewController.swift in Sources */,
+				1C5D2A6D2050996500D3922E /* DashboardViewController.swift in Sources */,
 				A36370BA2044C1B7007C561D /* ViewController.swift in Sources */,
 				1C9E2F0A20500F2400F7427E /* ResetPasswordViewController.swift in Sources */,
 				A36370C02044C1B7007C561D /* Alpha_Phi_Omega.xcdatamodeld in Sources */,
