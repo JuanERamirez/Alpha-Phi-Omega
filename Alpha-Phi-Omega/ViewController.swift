@@ -64,8 +64,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     print("You have successfully logged in")
                     
                     // Go to the HomeViewController if the login is successful
-                    let vc = self.storyboard?.instantiateInitialViewController()
-                    self.present(vc!, animated: true, completion: nil)
+//                    let vc = self.storyboard?.instantiateInitialViewController()
+//                    self.present(vc!, animated: true, completion: nil)
                 }
                 else {
                     // Tells the user that there is an error and then gets Firebase to tell them the error
@@ -75,6 +75,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     alertController.addAction(defaultAction)
                     
                     self.present(alertController, animated: true, completion: nil)
+                    
+                    self.performSegue(withIdentifier: "goToDashboard", sender: self)
                 }
                 
             }

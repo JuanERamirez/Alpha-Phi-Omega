@@ -55,8 +55,8 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
                     print("You have successfully created an account.")
                     // Goes to Setup page which lets user take a photo for their profile picture and choose username
                     
-                    let vc = self.storyboard?.instantiateInitialViewController()
-                    self.present(vc!, animated: true, completion: nil)
+//                    let vc = self.storyboard?.instantiateInitialViewController()
+//                    self.present(vc!, animated: true, completion: nil)
                 }
                 else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)

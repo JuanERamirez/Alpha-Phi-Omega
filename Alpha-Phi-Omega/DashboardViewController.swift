@@ -9,7 +9,10 @@
 import UIKit
 
 class DashboardViewController: UIViewController {
-
+    @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak var profileButton: UIButton!
+    @IBOutlet weak var eventsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +24,6 @@ class DashboardViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
