@@ -25,7 +25,7 @@ class EventsViewController: UIViewController {
     @IBAction func datePickerDidSelectNewDate(_ sender: UIDatePicker) {
         let selectedDate = sender.date
         let delegate = UIApplication.shared.delegate as? AppDelegate
-        delegate?.scheduleNotification(at: selectedDate)
+        //delegate?.scheduleNotification(at: selectedDate)
     }
     
     /*

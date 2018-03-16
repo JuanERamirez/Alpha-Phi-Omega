@@ -10,20 +10,40 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class CreateAccountViewController: UIViewController, UITextFieldDelegate {
+class CreateAccountViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var pledgeClassTextField: UITextField!
+    @IBOutlet weak var graduationClassTextField: UITextField!
+    
+    let pledgeClassPickerData = [String](arrayLiteral: "Spring", "Fall")
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let thePicker = UIPickerView()
+        pledgeClassTextField.inputView = thePicker
+        
         emailTextField.delegate = self
         passwordTextField.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pledgeClassPickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pledgeClassPickerData[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        pledgeClassTextField.text = pledgeClassPickerData[row]
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
