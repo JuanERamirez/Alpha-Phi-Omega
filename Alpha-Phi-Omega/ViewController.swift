@@ -76,20 +76,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     
                     self.present(alertController, animated: true, completion: nil)
                     
-                    self.performSegue(withIdentifier: "goToDashboard", sender: self)
+//                    self.performSegue(withIdentifier: "goToDashboard", sender: self)
                 }
                 
             }
         }
     }
-    
-    @IBAction func forgotPasswordAction(_ sender: UIButton) {
-        
-    }
-    
-    @IBAction func createAccountAction(_ sender: UIButton) {
-        
-    }
-    
 }
 

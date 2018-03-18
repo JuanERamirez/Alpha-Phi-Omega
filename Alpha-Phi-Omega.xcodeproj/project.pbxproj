@@ -22,7 +22,6 @@
 		A36370C02044C1B7007C561D /* Alpha_Phi_Omega.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A36370BE2044C1B7007C561D /* Alpha_Phi_Omega.xcdatamodeld */; };
 		A36370C22044C1B7007C561D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A36370C12044C1B7007C561D /* Assets.xcassets */; };
 		A36370C52044C1B7007C561D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36370C32044C1B7007C561D /* LaunchScreen.storyboard */; };
-		A36370CD2044D193007C561D /* APO-Torch-Logo-whitegold-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A36370CC2044D193007C561D /* APO-Torch-Logo-whitegold-1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +43,6 @@
 		A36370C12044C1B7007C561D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A36370C42044C1B7007C561D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A36370C62044C1B7007C561D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A36370CC2044D193007C561D /* APO-Torch-Logo-whitegold-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APO-Torch-Logo-whitegold-1.png"; sourceTree = "<group>"; };
 		EF7DB5D66EDEF404E1291C10 /* Pods-Alpha-Phi-Omega.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alpha-Phi-Omega.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alpha-Phi-Omega/Pods-Alpha-Phi-Omega.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +102,6 @@
 				A36370C32044C1B7007C561D /* LaunchScreen.storyboard */,
 				A36370C62044C1B7007C561D /* Info.plist */,
 				A36370BE2044C1B7007C561D /* Alpha_Phi_Omega.xcdatamodeld */,
-				A36370CC2044D193007C561D /* APO-Torch-Logo-whitegold-1.png */,
 				1C9E2F0B205022A600F7427E /* GoogleService-Info.plist */,
 			);
 			path = "Alpha-Phi-Omega";
@@ -183,7 +180,6 @@
 				A36370C52044C1B7007C561D /* LaunchScreen.storyboard in Resources */,
 				A36370C22044C1B7007C561D /* Assets.xcassets in Resources */,
 				1C9E2F0C205022A600F7427E /* GoogleService-Info.plist in Resources */,
-				A36370CD2044D193007C561D /* APO-Torch-Logo-whitegold-1.png in Resources */,
 				A36370BD2044C1B7007C561D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

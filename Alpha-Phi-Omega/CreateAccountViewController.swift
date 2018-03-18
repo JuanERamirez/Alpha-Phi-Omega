@@ -11,12 +11,16 @@ import Firebase
 import FirebaseAuth
 
 class CreateAccountViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+    
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var pledgeClassTextField: UITextField!
     @IBOutlet weak var graduationClassTextField: UITextField!
+    @IBOutlet weak var birthdayTextField: UITextField!
+    
+    @IBOutlet weak var accountCreatedLabel: UILabel!
     
     let pledgeClassPickerData = [String](arrayLiteral: "Spring", "Fall")
     
@@ -51,9 +55,19 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate, UIPick
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == emailTextField {
+        if textField == firstNameTextField {
+            lastNameTextField.becomeFirstResponder()
+        } else if textField == lastNameTextField {
+            emailTextField.becomeFirstResponder()
+        } else if textField == emailTextField {
             passwordTextField.becomeFirstResponder()
         } else if textField == passwordTextField {
+            pledgeClassTextField.becomeFirstResponder()
+        } else if textField == pledgeClassTextField {
+            graduationClassTextField.becomeFirstResponder()
+        } else if textField == graduationClassTextField {
+            birthdayTextField.becomeFirstResponder()
+        } else if textField == birthdayTextField {
             textField.resignFirstResponder()
         }
         return true
@@ -61,7 +75,7 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate, UIPick
     
     @IBAction func createAccountAction(_ sender: UIButton) {
         if emailTextField.text == "" {
-            let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Error", message: "Please fill in every field above", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
@@ -73,6 +87,8 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate, UIPick
                 
                 if error == nil {
                     print("You have successfully created an account.")
+                    self.accountCreatedLabel.text = "You have successfully created an account. Head to login screen and input your credentials."
+                    self.accountCreatedLabel.textColor = .white
                     // Goes to Setup page which lets user take a photo for their profile picture and choose username
                     
 //                    let vc = self.storyboard?.instantiateInitialViewController()
@@ -90,14 +106,5 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate, UIPick
             }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
