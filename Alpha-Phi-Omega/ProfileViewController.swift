@@ -19,11 +19,11 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if Auth.auth().currentUser?.uid == nil {
-            logout()
-        }
+ //       if Auth.auth().currentUser?.uid == nil {
+ //           logout()
+ //       }
         
-        setupProfile()
+ //       setupProfile()
     }
     
     @IBAction func uploadImageButton(_ sender: Any) {
@@ -34,13 +34,14 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         self.present(picker, animated: true, completion: nil)
     }
     
-    @IBAction func saveChanges(_ sender: Any) {
+/*    @IBAction func saveChanges(_ sender: Any) {
         saveChanges()
     }
     
     @IBAction func logoutButton(_ sender: Any) {
         logout()
     }
+ */
     
     func setupProfile() {
 //        profileImage.layer.cornerRadius = profileImage.frame.size.width/2
@@ -68,7 +69,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     func logout() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let loginViewController = storyboard.instantiateViewController(withIdentifier: "Login")
+        let loginViewController = storyboard.instantiateViewController(withIdentifier: "InitialLoginNavController")
         present(loginViewController, animated: true, completion: nil)
     }
     
