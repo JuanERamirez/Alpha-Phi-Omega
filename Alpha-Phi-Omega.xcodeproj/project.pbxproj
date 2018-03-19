@@ -15,6 +15,9 @@
 		1C9E2F0820500EAB00F7427E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E2F0720500EAB00F7427E /* CreateAccountViewController.swift */; };
 		1C9E2F0A20500F2400F7427E /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E2F0920500F2400F7427E /* ResetPasswordViewController.swift */; };
 		1C9E2F0C205022A600F7427E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C9E2F0B205022A600F7427E /* GoogleService-Info.plist */; };
+		1CB6CE73205FC80B00D68DD9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB6CE72205FC80B00D68DD9 /* Event.swift */; };
+		1CB6CE75205FCB5200D68DD9 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB6CE74205FCB5200D68DD9 /* EventTableViewCell.swift */; };
+		1CB6CE77205FD21400D68DD9 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB6CE76205FD21400D68DD9 /* EventTableViewController.swift */; };
 		2F456A06A2817C9EBFB5A050 /* Pods_Alpha_Phi_Omega.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D497D1A76A049DC2CF3D03C /* Pods_Alpha_Phi_Omega.framework */; };
 		A36370B82044C1B7007C561D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36370B72044C1B7007C561D /* AppDelegate.swift */; };
 		A36370BA2044C1B7007C561D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36370B92044C1B7007C561D /* ViewController.swift */; };
@@ -33,6 +36,9 @@
 		1C9E2F0720500EAB00F7427E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		1C9E2F0920500F2400F7427E /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		1C9E2F0B205022A600F7427E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1CB6CE72205FC80B00D68DD9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		1CB6CE74205FCB5200D68DD9 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		1CB6CE76205FD21400D68DD9 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		5D497D1A76A049DC2CF3D03C /* Pods_Alpha_Phi_Omega.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alpha_Phi_Omega.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		935523DE70A078F0583A0634 /* Pods-Alpha-Phi-Omega.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alpha-Phi-Omega.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alpha-Phi-Omega/Pods-Alpha-Phi-Omega.release.xcconfig"; sourceTree = "<group>"; };
 		A36370B42044C1B7007C561D /* Alpha-Phi-Omega.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alpha-Phi-Omega.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +97,9 @@
 				A36370B72044C1B7007C561D /* AppDelegate.swift */,
 				A36370B92044C1B7007C561D /* ViewController.swift */,
 				A36370BB2044C1B7007C561D /* Main.storyboard */,
+				1CB6CE76205FD21400D68DD9 /* EventTableViewController.swift */,
+				1CB6CE74205FCB5200D68DD9 /* EventTableViewCell.swift */,
+				1CB6CE72205FC80B00D68DD9 /* Event.swift */,
 				1C5D2A7C20510B2600D3922E /* DirectionsViewController.swift */,
 				1C5D2A7A20510B1300D3922E /* EventsViewController.swift */,
 				1C5D2A7820510B0300D3922E /* ProfileViewController.swift */,
@@ -251,7 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB6CE75205FCB5200D68DD9 /* EventTableViewCell.swift in Sources */,
 				1C9E2F0820500EAB00F7427E /* CreateAccountViewController.swift in Sources */,
+				1CB6CE73205FC80B00D68DD9 /* Event.swift in Sources */,
+				1CB6CE77205FD21400D68DD9 /* EventTableViewController.swift in Sources */,
 				1C5D2A6D2050996500D3922E /* DashboardViewController.swift in Sources */,
 				1C5D2A7720510AF100D3922E /* SettingsViewController.swift in Sources */,
 				A36370BA2044C1B7007C561D /* ViewController.swift in Sources */,

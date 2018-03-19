@@ -104,7 +104,7 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate/*, UIPi
     }
     
     @IBAction func createAccountAction(_ sender: UIButton) {
-        if firstNameTextField.text == "" || lastNameTextField.text == "" || passwordTextField.text == "" || /*pledgeClassTextField.text == "" ||*/ membershipStatusTextField.text == ""  || birthdayTextField.text == "" || familyTextField.text == "" || bigBrotherTextField.text == "" || littleBrotherTextField.text == "" {
+        if firstNameTextField.text == "" || lastNameTextField.text == "" || passwordTextField.text == "" || pledgeClassTextField.text == "" || membershipStatusTextField.text == ""  || birthdayTextField.text == "" || familyTextField.text == "" || bigBrotherTextField.text == "" || littleBrotherTextField.text == "" {
             let alertController = UIAlertController(title: "Error", message: "Please fill in every field above", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
