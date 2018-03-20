@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class EventTableViewController: UITableViewController {
     
@@ -72,10 +73,16 @@ class EventTableViewController: UITableViewController {
     }
     
     @IBAction func unwindToEventList(sender: UIStoryboardSegue) {
+
         if let sourceViewController = sender.source as? EventsViewController, let event = sourceViewController.event {
-            let newIndexPath = IndexPath(row: events.count, section: 0)
-            events.append(event)
-            tableView.insertRows(at: [newIndexPath], with: .automatic)
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                events[selectedIndexPath.row] = event
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            } else {
+                let newIndexPath = IndexPath(row: events.count, section: 0)
+                events.append(event)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
         }
     }
 
@@ -114,14 +121,32 @@ class EventTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        super.prepare(for: segue, sender: sender)
+        switch(segue.identifier ?? "") {
+            case "AddEvent":
+                os_log("Adding a new event.", log: OSLog.default, type: .debug)
+            case "ShowDetail":
+                guard let eventDetailViewController = segue.destination as? EventsViewController else {
+                    fatalError("Unexpected destination: \(segue.destination)")
+                }
+                guard let selectedEventCell = sender as? EventTableViewCell else {
+                    fatalError("Unexpected sender: \(String(describing: sender))")
+                }
+                guard let indexPath = tableView.indexPath(for: selectedEventCell) else {
+                fatalError("The selected cell is not being displayed by the table.")
+                }
+                let selectedEvent = events[indexPath.row]
+                eventDetailViewController.event = selectedEvent
+            default:
+                fatalError("Unexpected segue identifier: \(String(describing: segue.identifier))")
+            
+        }
     }
-    */
+ 
 
 }

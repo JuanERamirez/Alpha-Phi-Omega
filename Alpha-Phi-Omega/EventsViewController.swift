@@ -28,6 +28,16 @@ class EventsViewController: UIViewController, UITextFieldDelegate, UIImagePicker
 
         setupDelegates()
         
+        if let event = event {
+            navigationItem.title = event.name
+            eventNameTF.text = event.name
+            eventImage.image = event.photo
+            eventDateTF.text = event.date
+            eventLocationTF.text = event.location
+            eventTimeTF.text = event.time
+            eventSummaryTF.text = event.summary
+        }
+        
         updateSaveButtonState()
     }
     
